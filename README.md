@@ -216,7 +216,7 @@ Table 1. Access control attributes
 
 
 | Access control attribute keyword        | Access                                                                             |
-| --------------------------------------  |:------------------------------------------------------------------------------ :   |
+| --------------------------------------  |------------------------------------------------------------------------------   |
 | public                                  | available to any caller                                                            |
 | private                                 | available only to the class that defines it                                        |
 | protected                               | available only to the class that defines it and to any subclasses of that class    |
