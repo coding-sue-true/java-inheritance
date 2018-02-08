@@ -213,25 +213,19 @@ trace(cake is Sprite);  //false
 - You control access to variables, classes, functions, and methods using access control attributes. You have seen them used in previous articles in Learning ActionScript 3. When using inheritance, understanding how access control works is important.
 
 Table 1. Access control attributes
-| Access control attribute keyword | Access |
-| --------------------------- | ----------- |
- public
 
-available to any caller
- private
 
-available only to the class that defines it
- protected
-
-available only to the class that defines it and to any subclasses of that class
- internal
-
-available to any caller within the same package
+| Access control attribute keyword        | Access                                                                             |
+| --------------------------------------  |:------------------------------------------------------------------------------ :   |
+| public                                  | available to any caller                                                            |
+| private                                 | available only to the class that defines it                                        |
+| protected                               | available only to the class that defines it and to any subclasses of that class    |
+| internal                                | available to any caller within the same package                                    |
 
 
 In ActionScript 3, there are four levels of access control: public, private, protected, and internal (see Table 1). The default level is internal.
 
-Any public property, method, or class is available anywhere in your application. Therefore, a child class will inherit all public properties and methods from its parent class. Private properties and methods are part of a class's implementation and are only available within the class. The SampleParent class below has public, private, and protected properties and methods:
+- Any public property, method, or class is available anywhere in your application. Therefore, a child class will inherit all public properties and methods from its parent class. Private properties and methods are part of a class's implementation and are only available within the class. The SampleParent class below has public, private, and protected properties and methods:
 ```
 package samples {
     public class SampleParent {
